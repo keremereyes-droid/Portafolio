@@ -7,7 +7,8 @@
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <!--Estilos de letras-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <!--Animacion para scroll-->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <!-- CSS propio -->
@@ -17,51 +18,175 @@
 <body>
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="#">Bienvenido</a>
-            <div>
+            <a class="navbar-brand" href="#">Karem Reyes</a>
+            <div class="menu-animado">
+                <!--espacio para otro boton repetir lo de abajo-->
                 <a class="nav-link d-inline" href="#">Inicio</a>
                 <a class="nav-link d-inline" href="#">Proyectos</a>
                 <a class="nav-link d-inline" href="#">Contactame</a>
+                <a class="nav-link d-inline" href="#">CV</a>
+            
             </div>
         </div>
     </nav>
 
     <!--HERO -->
-    <section class="container my-5">
+    <section class="container my-6">
         <div class="row align-items-center">
 
             <div class="col-md-6">
                 <h1>Hola, soy Karem </h1>
-                <h3>Desarrolladora Jr Full Stack</h3>
+                <h3>Desarrolladora Full Stack jr</h3>
                 <p>Creando soluciones web modernas.</p>
                 <a href="#" class="btn btn-dark">Ver proyectos</a>
             </div>
 
             <div class="col-md-6 text-center">
-                <img src="https://via.placeholder.com/300" class="img-fluid" alt="perfil">
-            </div>
+
+    <img src="imagen_portafolio.png" class="mi-foto" alt="perfil">
+
+    <div class="frase-foto">
+        <p>
+            Conóceme un poco más ✨
+        </p>
+
+        <p class="subfrase">
+            Código, creatividad y una buena canción 🎧
+        </p>
+    </div>
+    <div class="flecha-spotify">
+
+    <svg viewBox="0 0 300 250">
+
+        <path d="M150 0 
+                    C150 80, 300 80, 300 160
+                    C300 220, 80 220, 20 220"
+                fill="none"
+                stroke="gold"
+                stroke-width="3"/>
+
+
+        <path d="M20 220 L40 205"
+                fill="none"
+                stroke="gold"
+                stroke-width="3"/>
+
+        <path d="M20 220 L40 235"
+                fill="none"
+                stroke="gold"
+                stroke-width="3"/>
+
+    </svg>
+
+</div>
+
+</div>
 
         </div>
     </section>
+<!-- SOBRE MÍ + SPOTIFY -->
+<section class="container my-5">
 
-    <!-- SOBRE MÍ -->
-    <section class="container my-5">
-        <div class="row align-items-center">
+    <div class="row align-items-center g-0">
 
-            <div class="col-md-6">
-                <img src="https://via.placeholder.com/300" class="img-fluid" alt="sobre mi">
-            </div>
+        <!-- SPOTIFY -->
+        <div class="col-md-5">
 
-            <div class="col-md-6">
-                <h2>Sobre mí</h2>
-                <p>Soy desarrolladora en formación con interés en crear aplicaciones web funcionales.</p>
+            <div class="spotify-section">
+
+                <h2> Playlist para programar</h2>
+                <p>La música que me acompaña mientras creo proyectos</p>
+
+                <div class="spotify-card">
+                    <iframe 
+                        data-testid="embed-iframe"
+                        src="https://open.spotify.com/embed/album/1aoWxOWHJNG1VPpJZwpYl2?utm_source=generator&si=24b18ecb6ab545ed"
+                        width="100%" 
+                        height="352" 
+                        frameBorder="0" 
+                        allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+
             </div>
 
         </div>
-    </section>
 
+
+        <!-- SOBRE MÍ -->
+        <div class="col-md-6">
+
+            <h2>Sobre mí</h2>
+
+            <p>
+                Apasionada por la tecnología, el diseño web y las ganas de aprender cosas nuevas todos los días. Empecé en este camino porque me fascina cómo unas cuantas líneas de código pueden transformarse en herramientas útiles y reales para las personas. Creo firmemente que la curiosidad y la persistencia son las mejores aliadas de una desarrolladora, y siempre ando construyendo o experimentando con algo nuevo para poner a prueba lo que voy aprendiendo.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+    
+    <!--aqui inician los acordeones-->
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne">
+                    ¿Por qué elegí el desarrollo web?
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                    <strong>Mi camino hacia el desarrollo Full Stack</strong> Mi carrera comenzó en el sector financiero, un mundo analítico y estructurado. Sin embargo, mi verdadera pasión por la tecnología me llevó a dar un giro total. Decidí entrar al desarrollo web porque comprendí que la tecnología evoluciona constantemente y no quería quedarme atrás, sino mantenerme relevante y aportar soluciones reales.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseTwo">
+                    Lo que aprendo de cada error
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the
+                    collapse plugin adds the appropriate classes that we use to style each element. These classes
+                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                    modify any of this with custom CSS or overriding our default variables. It’s also worth noting that
+                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
+                    overflow.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree">
+                    El siguiente paso en mi carrera
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the
+                    collapse plugin adds the appropriate classes that we use to style each element. These classes
+                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                    modify any of this with custom CSS or overriding our default variables. It’s also worth noting that
+                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
+                    overflow.
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- PROYECTOS -->
     <section class="container my-5" data-aos="zoom-in">
         <h2 class="text-center mb-4">Proyectos</h2>
@@ -121,8 +246,36 @@
             <span class="badge bg-dark">GitHub</span>
         </div>
     </section>
+    <section class="tecnologias text-center">
+        <h2>🛠 Tecnologías</h2>
 
-    <!-- CONTACTO -->
+        <div class="grid-tech">
+
+            <div class="tech-card" data-bs-toggle="tooltip" title="Git: Control de versiones">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png">
+                <p>Git</p>
+            </div>
+
+            <div class="tech-card" data-bs-toggle="tooltip" title="HTML: Estructura web">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png">
+                <p>HTML</p>
+            </div>
+
+            <div class="tech-card" data-bs-toggle="tooltip" title="CSS: Estilos visuales">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png">
+                <p>CSS</p>
+            </div>
+
+            <div class="tech-card" data-bs-toggle="tooltip" title="JavaScript: Interactividad">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png">
+                <p>JS</p>
+            </div>
+
+        </div>
+    </section>
+    <!-- SECCIÓN TECNOLOGÍAS -->
+
+    </section <!-- CONTACTO -->
     <section class="container my-5">
         <h2 class="text-center mb-4">Contacto</h2>
 
@@ -139,14 +292,14 @@
         <p>© 2026 Karem Reyes</p>
     </footer>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-    AOS.init({
-    duration: 1000,
-    once: true,
-    easing: 'ease-in-out'
-    });
-</script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: 'ease-in-out'
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Portafolio.js"></script>
 
 </body>
-
-

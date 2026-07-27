@@ -1,21 +1,297 @@
+
+/*letra de todas las palabras*/
 body {
-  font-family: 'Courier New', Courier, monospace, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  background-image: url(fond123.jpg);
+  background-size: cover;
+  color: black;
 }
 
 h1, h2, h3 {
   font-weight: bold;
 }
 
-.card {
-  border: none;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+/* COLOR GENERAL DE TEXTOS */
+
+h1, h2, h3, h4, h5, p, a {
+    color: black;
+}
+/* aqui se le da animacion al bievenido*/
+.navbar-brand{
+  opacity: 0;
+  transform: scale(0.8);
+  animation: zoomIn 0.6s ease forwards;
 }
 
+.navbar-brand {
+  font-family:'Poppins', sans-serif ;
+  font-weight: 600;
+  color: black;
+}
+
+/*interaccion del navar*/
+.menu-animado .nav-link {
+  transition: all 0.3s ease;
+  margin-left: 30px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+
+  padding: 8px 18px;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.menu-animado .nav-link:hover {
+  transform: translateY(-5px);
+  background: rgba(255,255,255,0.35);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.menu-animado .nav-link {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: bajar 0.6s ease forwards;
+}
+
+.navbar {
+  
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  padding: 15px 0;
+  margin: 20px;
+  border-radius: 20px;
+
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.navbar a {
+  color:black !important;
+}
+
+.frase-foto {
+    margin-top: 25px;
+}
+
+.frase-foto p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.subfrase {
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    font-style: italic;
+}
+
+/*spotify*/
+.spotify-section {
+    padding:  20px;
+    text-align: center;
+    margin-top: -200px;
+}
+
+.spotify-section h2 {
+    font-family: "Sora", sans-serif;
+    font-size: 2rem;
+}
+
+.spotify-section p {
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 30px;
+}
+
+.spotify-card {
+    max-width: 300px;
+    margin: auto;
+    padding: 20px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.3);
+}
+
+.flecha-spotify {
+    width: 950px;
+    height: 350px;
+    margin-top: 20px;
+
+    margin-left: -300px;
+    margin-right: auto;
+}
+
+.flecha-spotify svg {
+    width: 100%;
+    height: 100%;
+}
+.card {
+  background: rgba(255, 255, 255, 0.08); /* efecto vidrio */
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: none;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* imagen */
 .card img {
   height: 200px;
   object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
+/* hover */
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/*color de botones*/
 .btn-dark {
   background-color: #000;
 }
+
+/*esto le da margen a la foto*/
+
+.mi-foto {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  border: 4px solid rgba(255, 255, 255, 0.5);
+  transition: transform .3s ease;
+}
+
+.mi-foto :hover{
+  transform: scale(1.05);
+}
+
+/* Retraso entre palabras */
+.menu-animado .nav-link:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.menu-animado .nav-link:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.menu-animado .nav-link:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+@keyframes bajar {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes zoomIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+
+
+/*git*//*desde aqui inicia el efecto para los iconos seleccionados*/
+img {
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+/* GRID */
+.grid-tech {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+  padding: 0 20px;
+}
+
+/* TARJETAS */
+.tech-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* ICONOS */
+.tech-card img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+/* TEXTO */
+.tech-card p {
+  margin: 0;
+  color: white;
+  font-weight: 500;
+}
+
+/* HOVER PRO */
+.tech-card:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* CONTENEDOR GENERAL (no ocupa todo el ancho) */
+.accordion {
+  max-width: 700px;
+  margin: 40px auto;
+}
+
+/* TARJETAS (cada item) */
+.accordion-item {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+/* HOVER (efecto flotante) */
+.accordion-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* BOTÓN (parte clickeable) */
+.accordion-button {
+  background: transparent;
+  color: black;
+  font-weight: 500;
+  border: none;
+  box-shadow: none;
+}
+
+/* CUANDO ESTÁ ABIERTO */
+.accordion-button:not(.collapsed) {
+  background: rgba(255, 255, 255, 0.15);
+  color: black;
+}
+
+/* TEXTO INTERNO */
+.accordion-body {
+  color: black;
+}
+
+/* FLECHITA BLANCA (detalle pro) */
+.accordion-button::after {
+  filter: invert(1);
+}
+
