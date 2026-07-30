@@ -16,16 +16,20 @@ h1, h2, h3, h4, h5, p, a {
     color: black;
 }
 /* aqui se le da animacion al bievenido*/
+
 .navbar-brand{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 2.2rem; 
+  color: black;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
   opacity: 0;
   transform: scale(0.8);
   animation: zoomIn 0.6s ease forwards;
-}
-
-.navbar-brand {
-  font-family:'Poppins', sans-serif ;
-  font-weight: 600;
-  color: black;
 }
 
 /*interaccion del navar*/
@@ -70,6 +74,16 @@ h1, h2, h3, h4, h5, p, a {
   color:black !important;
 }
 
+.logo-nav {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: transform 0.5s ease;
+}
+.logo-nav:hover {
+    transform: rotate(360deg);
+}
 .frase-foto {
     margin-top: 25px;
 }
@@ -293,5 +307,40 @@ img:hover {
 /* FLECHITA BLANCA (detalle pro) */
 .accordion-button::after {
   filter: invert(1);
+}
+
+/*youtube*/
+.video-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-card:hover {
+    transform: translateY(-8px);
+}
+
+.video-card iframe {
+    width: 100%;
+    height: 220px;
+}
+
+.video-info {
+    padding: 20px;
+}
+
+.video-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.video-info p {
+    line-height: 1.6;
+    color: black;
 }
 
